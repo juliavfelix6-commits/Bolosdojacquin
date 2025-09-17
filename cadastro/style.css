@@ -8,7 +8,7 @@
 :root {
     --corPrincipal: #ffd188;
     --arredondamento: 10px;
-    --sombra:  0 4px 4px 2px #00000025;
+    --sombra: 0 4px 4px 2px #00000025;
 
 }
 
@@ -231,7 +231,7 @@ th {
 }
 
 td {
-    padding-top: 10px 3px 5px 3px;
+    padding: 10px 3px 5px 3px;
     border-bottom: solid 2px #83838350;
 }
 
@@ -239,6 +239,21 @@ table svg {
     width: 30px;
 }
 
+/* Rodapé */
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #FFD188;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-family: "Julius Sans One", sans-serif;
+    text-align: center;
+
+}
 
 /* midia */
 @media screen and (max-width: 1000px) {
@@ -268,7 +283,7 @@ table svg {
     table {
         text-align: left;
         max-width: 460px;
-        border-collapse: collapse;
+
 
     }
 
@@ -286,7 +301,7 @@ table svg {
         box-shadow: var(--sombra)
     }
 
-    td{
+    td {
         border-bottom: none;
     }
 
@@ -298,5 +313,6 @@ table svg {
 
     td:last-child {
         align-self: flex-end;
+        cursor: pointer;
     }
 }
